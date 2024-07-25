@@ -22,3 +22,19 @@ model User {
   carteira Float
   senha String 
 }
+
+model Servico {
+  id      String   @id @default(auto()) @map("_id") @db.ObjectId
+  email   String   
+  nameservico    String
+  nif String   
+  preco Float 
+}
+
+model contracao {
+  id      String   @id @default(auto()) @map("_id") @db.ObjectId
+  email   String   
+  nameservico    String
+  nif String  
+  preco Float 
+}
